@@ -1,0 +1,42 @@
+.login{
+  -fx-background-radius:5px;
+  -fx-border-radius:5px;
+}
+.btnlogin{
+  -fx-background-color:rgba(243, 182, 190, 0.85);
+  -fx-font-color: #fff;
+  -fx-background-radius: 100px;
+  -fx-border-radius: 100px;
+  -fx-border-width: 2px ;
+  -fx-transition: 0.5s;
+
+}
+.btnlogin:hover{
+  -fx-background-color:#d34913;
+  -fx-color:#fff;
+}
+.btngoogle{
+  -fx-background-color:#fbc574;
+  -fx-background-radius:5px;
+}
+.btngoogle:hover{
+  -fx-background-color:#c9840e;
+}
+.btfacebook{
+  -fx-background-color:#53bde7;
+  -fx-background-radius:5px;
+}
+.btfacebook:hover{
+  -fx-background-color:#0899d3;
+}
+.checkbox{
+  -fx-background-radius:10px;
+}
+.textfield{
+  -fx-background-radius:10px;
+  -fx-border-radius:10px;
+  -fx-border-color:rgba(243, 182, 190, 0.85);
+}
+.textfield:hover{
+  -fx-border-color:#e4119e;
+}

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="mainpane" stylesheets="@stylemainpane.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPane.MainPaneController">
+   <children>
+      <Pane prefHeight="80.0" prefWidth="1200.0" styleClass="mainpane" stylesheets="@stylemainpane.css">
+         <children>
+            <TextField layoutX="200.0" layoutY="20.0" prefHeight="30.0" prefWidth="280.0" promptText="Tim kiem" />
+            <Button layoutX="440.0" layoutY="20.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" />
+            <MenuBar layoutX="600.0" layoutY="20.0" prefHeight="30.0" prefWidth="500.0" styleClass="menubar" stylesheets="@stylemainpane.css">
+              <menus>
+                <Menu id="menuitem" mnemonicParsing="false" onAction="#quanlibanhang" text="Quan li ban hang">
+                  <items>
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#timkiemsanpham" text="Tim kiem san pham" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#xemthongtin" text="Xem thong tin" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#dathang" text="Dat hang" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#thanhtoan" text="Thanh toan" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#xemtinhtrangdonhang" text="Xem tinh trang don hang" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#duyetchuyenhang" text="Duyet chuyen hang" />
+                  </items>
+                </Menu>
+                <Menu id="menuitem" mnemonicParsing="false" onAction="#quanlinhaphang" text="Quan li nhap hang">
+                  <items>
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#capnhatsanpham" text="Cap nhat san pham" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#capnhathoadon" text="Cap nhat hoa don" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#capnhatsoluong" text="Cap nhat so luong" />
+                  </items>
+                </Menu>
+                <Menu id="menuitem" mnemonicParsing="false" onAction="#baocaothongke" text="Bao cao thong ke">
+                  <items>
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#thongkedonhang" text="Thong ke don hang" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#thongkesoluongsanpham" text="Thong ke so luong san pham" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#thongkedoanhthu" text="Thong ke doanh thu" />
+                  </items>
+                </Menu>
+                  <Menu id="menuitem" mnemonicParsing="false" onAction="#nhansu" text="Nhan su">
+                    <items>
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#chamcong" text="Cham cong" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#luong" text="Luong" />
+                    </items>
+                  </Menu>
+                  <Menu id="menuitem" mnemonicParsing="false" onAction="#capnhatthongtin" text="Tai khoan">
+                    <items>
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#capnhatthongtin" text="Cap nhat thong tin" />
+                        <MenuItem id="menuitem" mnemonicParsing="false" onAction="#dangxuat" text="Dang xuat" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <Label layoutX="60.0" layoutY="12.0" prefHeight="30.0" prefWidth="80.0" text="Hello" textFill="#d71e80">
+               <font>
+                  <Font name="Brush Script MT Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <StackPane fx:id="stackPane" layoutX="230.0" layoutY="80.0" prefHeight="690.0" prefWidth="940.0" styleClass="stackpane" stylesheets="@stylemainpane.css">
+         <children>
+            <TabPane id="tabpane" fx:id="quanLiBanHang" prefHeight="690.0" prefWidth="970.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="TimKiemSanPham" text="Tim kiem san pham">
+                     <content>
+                        <Pane prefHeight="681.0" prefWidth="1000.0">
+                           <children>
+                              <TableView layoutX="30.0" layoutY="80.0" prefHeight="540.0" prefWidth="880.0">
+                                <columns>
+                                  <TableColumn prefWidth="180.0" text="Ma san pham" />
+                                  <TableColumn prefWidth="190.0" text="Ten san pham" />
+                                    <TableColumn prefWidth="180.0" text="C1" />
+                                    <TableColumn prefWidth="240.0" text="C1" />
+                                    <TableColumn prefWidth="210.0" text="C1" />
+                                </columns>
+                              </TableView>
+                              <TextField layoutX="315.0" layoutY="25.0" prefHeight="30.0" prefWidth="280.0" promptText="Tim kiem san pham" />
+                              <Button layoutX="555.0" layoutY="26.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" />
+                           </children>
+                        </Pane>
+                     </content>
+                  </Tab>
+                <Tab fx:id="XemThongTin" text="Xem thong tin">
+                     <content>
+                        <Pane />
+                     </content>
+                  </Tab>
+                  <Tab fx:id="DatHang" text="Dat hang">
+                     <content>
+                        <Pane>
+                           <children>
+                              <TableView layoutX="30.0" layoutY="30.0" prefHeight="590.0" prefWidth="880.0">
+                                <columns>
+                                  <TableColumn prefWidth="160.0" text="C1" />
+                                  <TableColumn minWidth="6.0" prefWidth="170.0" text="C2" />
+                                    <TableColumn minWidth="6.0" prefWidth="170.0" text="C2" />
+                                    <TableColumn minWidth="6.0" prefWidth="116.0" text="C2" />
+                                    <TableColumn minWidth="6.0" prefWidth="130.0" text="C2" />
+                                    <TableColumn minWidth="6.0" prefWidth="200.0" text="C2" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="ThanhToan" text="Thanh toan">
+                     <content>
+                        <Pane>
+                           <children>
+                              <TableView layoutX="30.0" layoutY="30.0" prefHeight="580.0" prefWidth="880.0">
+                                <columns>
+                                  <TableColumn prefWidth="137.0" text="C1" />
+                                  <TableColumn prefWidth="194.0" text="C2" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="XemTinhTrangDonHang" text="Xem tinh trang don hang">
+                     <content>
+                        <Pane>
+                           <children>
+                              <TableView layoutX="30.0" layoutY="30.0" prefHeight="590.0" prefWidth="880.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="DuyetChuyenHang" text="Duyet chuyen hang">
+                     <content>
+                        <Pane prefHeight="600.0" prefWidth="1000.0" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <TabPane id="tabpane" fx:id="quanLiNhapHang" tabClosingPolicy="UNAVAILABLE" visible="false">
+              <tabs>
+                <Tab fx:id="CapNhatSanPham" text="Cap nhat san pham">
+                     <content>
+                        <Pane>
+                           <children>
+                              <TabPane id="tabpane" layoutX="30.0" layoutY="30.0" prefHeight="590.0" prefWidth="880.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="Them san pham" />
+                                  <Tab text="Cap nhat thong tin san pham" />
+                                    <Tab text="Xoa san pham">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                      </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </Pane>
+                     </content></Tab>
+                <Tab fx:id="CapNhatHoaDon" text="Cap nhat hoa don">
+                     <content>
+                        <Pane />
+                     </content></Tab>
+                  <Tab fx:id="CapNhatSoLuong" text="Cap nhat so luong">
+                     <content>
+                        <Pane />
+                     </content></Tab>
+              </tabs>
+            </TabPane>
+            <TabPane id="tabpane" fx:id="baoCaoThongKe" prefHeight="690.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+              <tabs>
+                <Tab fx:id="ThongKeDonHang" text="Thong ke don hang">
+                     <content>
+                        <Pane>
+                           <children>
+                              <TableView layoutX="30.0" layoutY="80.0" prefHeight="540.0" prefWidth="880.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                              <TextField layoutX="330.0" layoutY="30.0" prefHeight="30.0" prefWidth="280.0" promptText="Tim kiem" />
+                              <Button layoutX="570.0" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" />
+                           </children>
+                        </Pane>
+                     </content></Tab>
+                <Tab fx:id="ThongKeSoLuongSanPham" text="Thong ke so luong san pham">
+                     <content>
+                        <Pane>
+                           <children>
+                              <TableView layoutX="30.0" layoutY="80.0" prefHeight="540.0" prefWidth="880.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                              <TextField layoutX="330.0" layoutY="30.0" prefHeight="30.0" prefWidth="280.0" promptText="Tim kiem" />
+                              <Button layoutX="570.0" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" />
+                           </children>
+                        </Pane>
+                     </content></Tab>
+                  <Tab fx:id="ThongKeDoanhThu" text="Thong ke doanh thu">
+                     <content>
+                        <Pane>
+                           <children>
+                              <TableView layoutX="30.0" layoutY="80.0" prefHeight="540.0" prefWidth="880.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                              <TextField layoutX="330.0" layoutY="30.0" prefHeight="30.0" prefWidth="280.0" promptText="Tim kiem" />
+                              <Button layoutX="571.0" layoutY="29.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" />
+                           </children>
+                        </Pane>
+                     </content></Tab>
+              </tabs>
+            </TabPane>
+            <TabPane id="tabpane" fx:id="nhanSu" prefHeight="690.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+              <tabs>
+                <Tab fx:id="ChamCong" text="Cham cong">
+                     <content>
+                        <Pane>
+                           <children>
+                              <TableView layoutX="30.0" layoutY="30.0" prefHeight="600.0" prefWidth="880.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                     </content></Tab>
+                <Tab fx:id="Luong" text="Luong">
+                     <content>
+                        <Pane>
+                           <children>
+                              <TableView layoutX="30.0" layoutY="30.0" prefHeight="600.0" prefWidth="880.0">
+                                 <columns>
+                                    <TableColumn prefWidth="75.0" text="C1" />
+                                    <TableColumn prefWidth="75.0" text="C2" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                     </content></Tab>
+              </tabs>
+            </TabPane>
+            <Pane fx:id="taiKhoan" prefHeight="690.0" prefWidth="1000.0" visible="false">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="30.0" prefHeight="50.0" prefWidth="400.0" text="Cap nhat thong tin">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="300.0" layoutY="100.0" prefHeight="20.0" prefWidth="80.0" text="Ho">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ho" layoutX="400.0" layoutY="100.0" prefHeight="30.0" prefWidth="320.0" />
+                  <Label layoutX="300.0" layoutY="150.0" prefHeight="20.0" prefWidth="80.0" text="Ten">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ten" layoutX="400.0" layoutY="150.0" prefHeight="30.0" prefWidth="320.0" />
+                  <DatePicker fx:id="ngaysinh" layoutX="400.0" layoutY="200.0" prefHeight="30.0" prefWidth="250.0" />
+                  <Label layoutX="300.0" layoutY="200.0" prefHeight="20.0" prefWidth="80.0" text="Ngay sinh">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <SplitMenuButton fx:id="gioitinh" layoutX="726.0" layoutY="100.0" mnemonicParsing="false" text="Gioi tinh">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Nam" />
+                      <MenuItem mnemonicParsing="false" text="Nu" />
+                    </items>
+                  </SplitMenuButton>
+                  <Label layoutX="300.0" layoutY="250.0" prefHeight="20.0" prefWidth="80.0" text="So CMND">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="socmnd" layoutX="400.0" layoutY="250.0" prefHeight="30.0" prefWidth="320.0" />
+                  <Label layoutX="300.0" layoutY="300.0" prefHeight="20.0" prefWidth="80.0" text="Dia chi">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="diachi" layoutX="400.0" layoutY="300.0" prefHeight="30.0" prefWidth="320.0" />
+                  <Button layoutX="440.0" layoutY="370.0" mnemonicParsing="false" onAction="#xacNhan" prefHeight="30.0" prefWidth="120.0" text="Xac nhan" fx:id="xacnhan" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Pane layoutX="10.0" layoutY="80.0" prefHeight="720.0" prefWidth="200.0">
+         <children>
+            <TitledPane prefHeight="690.0" prefWidth="202.0" styleClass="titlepane" stylesheets="@stylemainpane.css" text="Don hang hom nay">
+               <content>
+                  <TableView prefHeight="669.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </content>
+            </TitledPane>
+         </children>
+      </Pane>
+   </children>
+</Pane>

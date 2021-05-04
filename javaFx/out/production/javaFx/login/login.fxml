@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.loginController">
+   <children>
+      <Label layoutX="50.0" layoutY="110.0" prefHeight="30.0" prefWidth="125.0" text="Tên đăng nhập" textFill="#e4119e">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="190.0" prefHeight="30.0" prefWidth="100.0" text="Mật khẩu" textFill="#e4119e">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <PasswordField fx:id="matKhau" layoutX="50.0" layoutY="230.0" prefHeight="35.0" prefWidth="300.0" styleClass="textfield" stylesheets="@stylelogin.css" />
+      <TextField fx:id="tenDangnhap" layoutX="50.0" layoutY="150.0" prefHeight="35.0" prefWidth="300.0" styleClass="textfield" stylesheets="@stylelogin.css" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="38.0" prefHeight="40.0" prefWidth="170.0" text="Shop Hello" textFill="#cd4190">
+         <font>
+            <Font name="Brush Script MT Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btDangnhap" layoutX="50.0" layoutY="300.0" mnemonicParsing="false" onAction="#dangnhap" prefHeight="40.0" prefWidth="300.0" styleClass="btnlogin" stylesheets="@stylelogin.css" text="Đăng nhập" textFill="WHITE" />
+      <CheckBox layoutX="55.0" layoutY="367.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="125.0" selected="true" styleClass="checkbox" stylesheets="@stylelogin.css" text="Lưu tài khoản" textFill="#e4119e" />
+      <Button layoutX="43.0" layoutY="438.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="145.0" styleClass="btngoogle" stylesheets="@stylelogin.css" text="Login with Google" textFill="WHITE" />
+      <Button layoutX="195.0" layoutY="438.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" styleClass="btfacebook" stylesheets="@stylelogin.css" text="Login with Facebook" textFill="WHITE" />
+      <Label layoutX="60.0" layoutY="520.0" prefHeight="30.0" prefWidth="280.0" text="Bạn chưa có tài khoản? Đăng kí tại">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="230.0" layoutY="363.0" prefHeight="29.0" prefWidth="125.0" text="Quên mật khẩu" textFill="#e4119e" />
+      <Hyperlink layoutX="302.0" layoutY="519.0" prefHeight="30.0" prefWidth="35.0" text="đây" textFill="#d10898">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

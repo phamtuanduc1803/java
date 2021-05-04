@@ -1,0 +1,26 @@
+.mainpane{
+	-fx-background-color:#FFFFFF;
+}
+.stackpane{
+	-fx-background-color:#EEEEEE;
+}
+.titlepane{
+	-fx-background-color:#EEEEEE;
+	-fx-background-radius:5px;
+	-fx-border-radius:5px;
+}
+.menubar{
+	-fx-background-radius:5px;
+	-fx-border-radius:5px;
+}
+.menubar #menuitem{
+	-fx-background-radius:5px;
+	-fx-border-radius:5px;
+}
+.menubar #menuitem:hover{
+	-fx-background-color:#CCCCCC;
+}
+.stackpane #tabpane{
+	-fx-background-radius:5px;
+	-fx-border-radius:5px;
+}
